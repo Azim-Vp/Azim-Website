@@ -212,25 +212,6 @@
           </div>
         </div>
       </div>
-      <script>
-        $("#submit-form").submit((e)=>{
-            e.preventDefault()
-            $.ajax({
-                url:"https://script.google.com/macros/s/AKfycbyehvLzVGQ2-ayhKHGEizeY3L3BCyIoS2nv38_J/exec",
-                data:$("#submit-form").serialize(),
-                method:"post",
-                success:function (response){
-                    alert("Form submitted successfully")
-                    window.location.reload()
-                    //window.location.href="https://google.com"
-                },
-                error:function (err){
-                    alert("Something Error")
-    
-                }
-            })
-        })
-    </script>
       <footer class="bg-light">
         <div class="container">
           <div class="row">
@@ -243,7 +224,7 @@
                 <i class="bi-instagram"></i>
               </a>
 
-              <p>Copyrights© Term and Conditions apply.</p>
+              <p>Copyrights© Term and Conditions apply. 2022</p>
             </div>
           </div>
         </div>
@@ -265,5 +246,24 @@
         crossorigin="anonymous"
       ></script>
     </section>
+    <script>
+        $("#submit-form").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"https://script.google.com/macros/s/AKfycbyehvLzVGQ2-ayhKHGEizeY3L3BCyIoS2nv38_J/exec",
+                data:$("#submit-form").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Form submitted successfully")
+                    window.location.reload()
+                    //window.location.href="https://google.com"
+                },
+                error:function (err){
+                    alert("Something Error")
+    
+                }
+            })
+        })
+    </script>
   </body>
 </html>
