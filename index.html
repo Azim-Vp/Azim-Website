@@ -102,21 +102,23 @@
     </section>
     <section class="bg-silver" id="about-section">
       <div class="container">
-        <div class="col-md-8">
+        <div class="col-md-12">
           <div class="about-section">
             <div class="p-3" style="width: 12">
               <h1 class="text-lg-left">About Me</h1>
 
               <p>
-                <strong>I am Azim Vp</strong> , a student who learning
-                programming with intrest towards IT , IT field a great value in
-                future as the world is running towards technologies,It can
-                provide empowerment, knowledge, awareness, access, and
-                community. As we develop the technology of the future, we can
-                work towards creating a better world long term. This means many
-                different things as technology merges with all parts of our
-                lives
+                <strong>I am Azim Vp</strong> , a student who has an intrest
+                towards IT and learning programming , coming from Calicut ,
+                Kerala "Gods own country". A football fan of Real Madrid FC
               </p>
+              <p>
+                IT field a great value in future as the world is running towards
+                technologies. As we develop the technology of the
+                future, we can work towards creating a better world long term.
+                
+              </p>
+              <p>Follow me if you want to learn how magical life really is! &#128150</p>
             </div>
           </div>
         </div>
@@ -126,41 +128,119 @@
       <div class="container">
         <h1 class="text-center">Learnings</h1>
         <div class="row">
-          <div class="col-md-4">
-            <div class="card text-center p-3">
-              <div class="card-body">
-                <h5 class="card-title">C</h5>
-                <p class="card-text">
-                  C is a general-purpose computer programming language.
-                  <strong> KNOWS 45% C</strong>
-                </p>
+          <div class="col-md-12">
+            <div class="progress_bar">
+                  <div class="pro-bar">
+                    <div class="progress_bar_title">
+                      HTML
+                      <span class="progress_number">55%</span>
+                    </div>
+
+                    <span
+                      class="progress-bar-inner"
+                      style="background-color: #1abc9c; width: 55%"
+                      data-value="55"
+                      data-percentage-value="55"
+                    ></span>
+                  </div>
+                </div>
+
+                <div class="progress_bar">
+                  <div class="pro-bar">
+                    <div class="progress_bar_title">
+                      CSS
+                      <span class="progress_number">65%</span>
+                    </div>
+                    <span
+                      class="progress-bar-inner"
+                      style="background-color: #fdba04; width: 65%"
+                      data-value="65"
+                      data-percentage-value="65"
+                    ></span>
+                  </div>
+                </div>
+                <div class="progress_bar">
+                  <div class="pro-bar">
+                    <div class="progress_bar_title">
+                      JAVA
+                      <span class="progress_number">35%</span>
+                    </div>
+                    <span
+                      class="progress-bar-inner"
+                      style="background-color: #45bd15; width: 35%"
+                      data-value="35"
+                      data-percentage-value="35"
+                    ></span>
+                  </div>
+                </div>
+                <div class="progress_bar">
+                  <div class="pro-bar">
+                    <div class="progress_bar_title">
+                      C
+                      <span class="progress_number">45%</span>
+                    </div>
+                    <span
+                      class="progress-bar-inner"
+                      style="background-color: #159bbd; width: 45%"
+                      data-value="45"
+                      data-percentage-value="45"
+                    ></span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="card text-center p-3">
-              
-              <div class="card-body">
-                <h5 class="card-title">HTML/CSS</h5>
-                <p class="card-text">
-                  HTML is the standard markup language for documents designed to
-                  be displayed in a web browser.It can be assisted by
-                  technologies such as CSS.<strong> KNOWS 65% HTML&CSS</strong>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card text-center p-3">
-              
-              <div class="card-body">
-                <h5 class="card-title">Java</h5>
-                <p class="card-text">
-                  Java is a high-level, class-based, object-oriented
-                  programming.<strong> KNOWS 35% JAVA</strong>
-                </p>
-              </div>
-            </div>
+          <style>
+            .progress_bar .pro-bar {
+              background: hsl(0, 0%, 97%);
+              box-shadow: 0 1px 2px hsla(0, 0%, 0%, 0.1) inset;
+              height: 4px;
+              margin-bottom: 12px;
+              margin-top: 50px;
+              position: relative;
+            }
+            .progress_bar .progress_bar_title {
+              color: black;
+              font-size: 15px;
+              font-weight: 300;
+              position: relative;
+              top: -28px;
+              z-index: 1;
+            }
+            .progress_bar .progress_number {
+              float: right;
+            }
+            .progress_bar .progress-bar-inner {
+              background-color: hsl(0, 0%, 88%);
+              display: block;
+              width: 0;
+              height: 100%;
+              position: absolute;
+              top: 0;
+              left: 0;
+              transition: width 1s linear 0s;
+            }
+            .progress_bar .progress-bar-inner:before {
+              content: "";
+              background-color: hsl(0, 0%, 100%);
+              border-radius: 50%;
+              width: 4px;
+              height: 4px;
+              position: absolute;
+              right: 1px;
+              top: 0;
+              z-index: 1;
+            }
+            .progress_bar .progress-bar-inner:after {
+              content: "";
+              width: 14px;
+              height: 14px;
+              background-color: inherit;
+              border-radius: 50%;
+              position: absolute;
+              right: -4px;
+              top: -5px;
+            }
           </div>
         </div>
       </div>
