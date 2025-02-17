@@ -35,6 +35,36 @@
     .social-icons a:hover {
       color: #E1306C;
     }
+      </style>
+    <style>
+    .typing-effect {
+  font-family: 'Courier New', monospace;
+  font-size: 36px;
+  color: #333;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid black; /* Simulates the cursor */
+  width: 0;
+  animation: typing 4s steps(40) 1s forwards, blink 0.75s step-end infinite;
+}
+
+/* Typing animation */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Blinking cursor effect */
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
     </style>
   </head>
   <body>
@@ -98,7 +128,7 @@
           </div>
           <div class="col-md-6">
             <b></b>
-            <h1>Hello! I'm Azim</h1>
+            <h1 class="typing-effect">Hello! I'm Azim</h1>
             <h4>
               Student <br />
               Calicut, Kerala, India
