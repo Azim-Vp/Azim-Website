@@ -368,40 +368,42 @@
     font-weight: bold;  
   }  
 </style>  
-        <section class="p-5 bg-light ml-auto" id="contact-section">  
-          <h1 class="text-center"><strong>Contact me</strong></h1>  
-          <div class="container">  
-            <div class="row">  
-              <div class="col-md-12">  
-                  <div class="form-group col-md-6" style="margin-top:20px;">  
-                    <label for="formGroupExampleInput">Email</label>  
-                    <input  
-                      type="text"  
-                      class="form-control"  
-                      id="formGroupExampleInput"  
-                      placeholder="sample@gmail.com"  
-                    />  
-                  </div>  
-                  <div class="form-group col-md-6">  
-                    <label for="formGroupExampleInput2">Comment</label>  
-  
-                    <textarea  
-                      placeholder="type your message here.."  
-                      class="form-control"  
-                      cols="30"  
-                      rows="10"  
-                    ></textarea>  
-                  </div>  
-  
-                  <div class="form-group p-3">  
-                    <button type="submit" class="btn btn-primary text-center">  
-                      submit  
-                    </button>  
-                  </div>  
-                </form>  
-              </div>  
-            </div>  
-          </div>  
+        <section class="p-5 bg-light ml-auto" id="contact-section">
+  <h1 class="text-center"><strong>Contact me</strong></h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <form action="https://formsubmit.co/azimvp2@gmail.com" method="POST">
+          <div class="form-group col-md-6" style="margin-top:20px;">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              class="form-control"
+              placeholder="sample@gmail.com"
+              required
+            />
+          </div>
+          <div class="form-group col-md-6">
+            <label for="message">Comment</label>
+            <textarea
+              name="message"
+              placeholder="Type your message here..."
+              class="form-control"
+              cols="30"
+              rows="10"
+              required
+            ></textarea>
+          </div>
+          <div class="form-group p-3">
+            <button type="submit" class="btn btn-primary text-center">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
           <footer class="bg-light">  
             <div class="container">  
               <div class="row">  
