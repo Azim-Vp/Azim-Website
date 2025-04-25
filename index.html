@@ -74,22 +74,7 @@
   gtag('js', new Date());  
   gtag('config', 'G-DHQPG55SD9');  
 </script>  
-    <script>
-  const dots = document.querySelectorAll('.timeline-marker');
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible-dot');
-        observer.unobserve(entry.target); // only once
-      }
-    });
-  }, {
-    threshold: 0.6
-  });
-
-  dots.forEach(dot => observer.observe(dot));
-    </script>
+    
   </head>  
   <body>  
     <header class="bg-black" style="position: fixed; width: 100%; z-index: 1">  
@@ -199,142 +184,6 @@
             <h1 class="text-center"><strong>Learnings</strong></h1>  
             <div class="row">  
               <div class="col-md-12">  
-                <div class="education-timeline-container">
-                  <h3>Education Timeline</h3>
-                  <div class="timeline">
-
-    <div class="timeline-item">
-      <div class="timeline-marker hidden-dot"></div>
-      <div class="timeline-line"></div>
-      <div class="timeline-content">
-        <h4>ABC High School</h4>
-        <span>2018 - 2023</span>
-      </div>
-    </div>
-
-    <div class="timeline-item">
-      <div class="timeline-marker hidden-dot"></div>
-      <div class="timeline-line"></div>
-      <div class="timeline-content">
-        <h4>XYZ Junior College</h4>
-        <span>2023 - Present</span>
-      </div>
-    </div>
-
-    <div class="timeline-item">
-      <div class="timeline-marker hidden-dot"></div>
-      <div class="timeline-content">
-        <h4>Online Courses (YouTube)</h4>
-        <span>Ongoing</span>
-      </div>
-    </div>
-  </div>
-</div>
- <style>
- .education-timeline-container {
-  margin-top: 60px;
-  text-align: center;
-}
-
-.education-timeline-container h3 {
-  font-size: 24px;
-  margin-bottom: 30px;
-  color: #00ff88;
-}
-
-.timeline {
-  position: relative;
-  margin-left: 40px;
-  text-align: left;
-}
-
-.timeline-item {
-  position: relative;
-  padding-left: 30px;
-  margin-bottom: 60px;
-}
-
-.timeline-marker {
-  position: absolute;
-  left: -10px;
-  top: 0;
-  width: 16px;
-  height: 16px;
-  background-color: #fff;
-  border-radius: 50%;
-  z-index: 2;
-  opacity: 0;
-  transform: scale(0.5);
-  transition: all 0.5s ease-out;
-}
-
-.timeline-marker.visible-dot {
-  opacity: 1;
-  transform: scale(1.3);
-  animation: pop-in 0.4s ease forwards;
-}
-
-.timeline-line {
-  position: absolute;
-  left: -2px;
-  top: 16px;
-  width: 4px;
-  height: 100%;
-  background-color: #fff;
-  z-index: 1;
-}
-
-.timeline-content h4 {
-  margin: 0;
-  font-size: 18px;
-  color: #000;
-}
-
-.timeline-content span {
-  font-size: 14px;
-  color: #555;
-}
-
-@keyframes pop-in {
-  0% {
-    transform: scale(0.5);
-    opacity: 0;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .timeline {
-    margin-left: 20px;
-  }
-
-  .timeline-item {
-    padding-left: 20px;
-  }
-
-  .timeline-marker {
-    width: 12px;
-    height: 12px;
-  }
-
-  .timeline-line {
-    left: -1px;
-    width: 2px;
-  }
-
-  .timeline-content h4 {
-    font-size: 16px;
-  }
-
-  .timeline-content span {
-    font-size: 13px;
-  }
-}
-   </style>
              <h2 style="margin-top:20px;"><strong><em>Languages</em></strong></h2>  
                 <div class="progress_bar">  
                   <div class="pro-bar">  
@@ -342,7 +191,7 @@
                       HTML/CSS  
                       <span class="progress_number">65%</span>  
                     </div>  
-                    <span  
+                  <span  
                       class="progress-bar-inner"  
                       style="background-color: #1abc9c; width:65%"  
                       data-value="65"  
