@@ -194,7 +194,7 @@
   </div>
 
   <div class="timeline-point">
-    <span class="timeline-dot"></span>
+    <span class="timeline-dot"><i class="fas fa-school"></i></span>
     <div class="timeline-info">
       <strong>2017 - 2024</strong>
       <p>Secondary Education (AL Farook Residential)</p>
@@ -202,7 +202,7 @@
   </div>
 
   <div class="timeline-point">
-    <span class="timeline-dot"></span>
+    <span class="timeline-dot"><i class="fas fa-school"></i></span>
     <div class="timeline-info">
       <strong>2015 - 2017</strong>
       <p>Primary Education (Gulf Asian English School)</p>
@@ -210,7 +210,7 @@
   </div>
   
       <div class="timeline-point">
-    <span class="timeline-dot"></span>
+    <span class="timeline-dot"><i class="fas fa-school"></i></span>
     <div class="timeline-info">
       <strong>2012 - 2015</strong>
       <p>Pre-Primary & Primary Education (AL Farook Residential)</p>
@@ -329,14 +329,14 @@
             .navbar-toggler-icon {  
               background-color: white;  
             }  
-            /* TIMELINE */
+/* Horizontal Timeline */
 .horizontal-timeline {
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 50px 0;
-  flex-wrap: wrap; /* responsive */
+  flex-wrap: wrap;
 }
 
 .timeline-line {
@@ -357,14 +357,23 @@
 }
 
 .timeline-dot {
-  display: inline-block;
-  height: 20px;
-  width: 20px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  color: #fff;
+  height: 30px;
+  width: 30px;
   background-color: #E1306C;
   border-radius: 50%;
   position: relative;
+  top: -50%;
   z-index: 2;
   transition: 0.3s;
+}
+
+.timeline-dot i {
+  pointer-events: none;
 }
 
 .timeline-point:hover .timeline-dot {
@@ -373,32 +382,48 @@
 }
 
 .timeline-info {
-  margin-top: 10px;
+  margin-top: 15px;
   color: #333;
 }
 
-.timeline-info p {
-  margin: 5px 0 0;
-  color: #555;
+.timeline-info strong {
+  display: block;
+  margin-bottom: 5px;
+  color: #000;
 }
 
+.timeline-info p {
+  margin: 0;
+  color: #555;
+  font-size: 0.95em;
+}
+
+/* Responsive for mobile */
 @media (max-width: 768px) {
   .horizontal-timeline {
     flex-direction: column;
+    align-items: flex-start;
   }
 
   .timeline-line {
     top: 0;
-    left: 50%;
+    left: 10px;
     width: 4px;
     height: 100%;
+  }
+
+  .timeline-dot {
+    top: 0;
   }
 
   .timeline-point {
     margin: 30px 0;
   }
-}
 
+  .timeline-info {
+    margin-left: 40px;
+  }
+}
 /* ICON HOVER */
 .progress_bar_title i {
   margin-right: 8px;
