@@ -181,42 +181,43 @@
         <section class="bg-light" id="learning-section" style="padding: 20px;">
   <div class="container">
     <h1 class="text-center"><strong>Education</strong></h1>
-<!-- TIMELINE - HORIZONTAL -->
-<div class="horizontal-timeline mt-5">
-  <div class="timeline-line"></div>
 
-  <div class="timeline-point">
-    <span class="timeline-dot"></span>
-    <div class="timeline-info">
-      <strong>2024 - Present</strong>
-      <p>Higher Secondary Education (AL Farook Residential)</p>
-    </div>
-  </div>
+    <!-- Horizontal Timeline -->
+    <div class="horizontal-timeline mt-5">
+      <div class="timeline-line"></div>
 
-  <div class="timeline-point">
-    <span class="timeline-dot"><i class="fas fa-school"></i></span>
-    <div class="timeline-info">
-      <strong>2017 - 2024</strong>
-      <p>Secondary Education (AL Farook Residential)</p>
-    </div>
-  </div>
-
-  <div class="timeline-point">
-    <span class="timeline-dot"><i class="fas fa-school"></i></span>
-    <div class="timeline-info">
-      <strong>2015 - 2017</strong>
-      <p>Primary Education (Gulf Asian English School)</p>
-      </div>
-  </div>
-  
       <div class="timeline-point">
-    <span class="timeline-dot"><i class="fas fa-school"></i></span>
-    <div class="timeline-info">
-      <strong>2012 - 2015</strong>
-      <p>Pre-Primary & Primary Education (AL Farook Residential)</p>
+        <span class="timeline-dot"><i class="fas fa-school"></i></span>
+        <div class="timeline-info">
+          <strong>2024 - Present</strong>
+          <p>Higher Secondary Education (AL Farook Residential)</p>
+        </div>
+      </div>
+
+      <div class="timeline-point">
+        <span class="timeline-dot"><i class="fas fa-school"></i></span>
+        <div class="timeline-info">
+          <strong>2017 - 2024</strong>
+          <p>Secondary Education (AL Farook Residential)</p>
+        </div>
+      </div>
+
+      <div class="timeline-point">
+        <span class="timeline-dot"><i class="fas fa-school"></i></span>
+        <div class="timeline-info">
+          <strong>2015 - 2017</strong>
+          <p>Primary Education (Gulf Asian English School)</p>
+        </div>
+      </div>
+
+      <div class="timeline-point">
+        <span class="timeline-dot"><i class="fas fa-school"></i></span>
+        <div class="timeline-info">
+          <strong>2012 - 2015</strong>
+          <p>Pre-Primary & Primary Education (AL Farook Residential)</p>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
     <!-- LANGUAGES -->
     <h2 style="margin-top:40px;"><strong><em>Languages</em></strong></h2>
@@ -329,100 +330,101 @@
             .navbar-toggler-icon {  
               background-color: white;  
             }  
-/* Horizontal Timeline */
 .horizontal-timeline {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 50px 0;
-  flex-wrap: wrap;
-}
-
-.timeline-line {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 100%;
-  height: 4px;
-  background-color: #ccc;
-  z-index: 1;
-}
-
-.timeline-point {
-  position: relative;
-  text-align: center;
-  z-index: 2;
-  flex: 1;
-}
-
-.timeline-dot {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 12px;
-  color: #fff;
-  height: 30px;
-  width: 30px;
-  background-color: #E1306C;
-  border-radius: 50%;
-  position: relative;
-  top: -50%;
-  z-index: 2;
-  transition: 0.3s;
-}
-
-.timeline-dot i {
-  pointer-events: none;
-}
-
-.timeline-point:hover .timeline-dot {
-  transform: scale(1.5);
-  background-color: #000;
-}
-
-.timeline-info {
-  margin-top: 15px;
-  color: #333;
-}
-
-.timeline-info strong {
-  display: block;
-  margin-bottom: 5px;
-  color: #000;
-}
-
-.timeline-info p {
-  margin: 0;
-  color: #555;
-  font-size: 0.95em;
-}
-
-/* Responsive for mobile */
-@media (max-width: 768px) {
-  .horizontal-timeline {
-    flex-direction: column;
-    align-items: flex-start;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0;
+    flex-wrap: wrap;
   }
 
   .timeline-line {
-    top: 0;
-    left: 10px;
-    width: 4px;
-    height: 100%;
-  }
-
-  .timeline-dot {
-    top: 0;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #ccc;
+    z-index: 1;
   }
 
   .timeline-point {
-    margin: 30px 0;
+    position: relative;
+    text-align: center;
+    z-index: 2;
+    flex: 1;
+  }
+
+  .timeline-dot {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    background-color: #E1306C;
+    border-radius: 50%;
+    position: relative;
+    top: -50%;
+    z-index: 2;
+    transition: 0.3s;
+  }
+
+  .timeline-dot i {
+    pointer-events: none;
+  }
+
+  .timeline-point:hover .timeline-dot {
+    transform: scale(1.5);
+    background-color: #000;
   }
 
   .timeline-info {
-    margin-left: 40px;
+    margin-top: 15px;
+    color: #333;
   }
+
+  .timeline-info strong {
+    display: block;
+    margin-bottom: 5px;
+    color: #000;
+  }
+
+  .timeline-info p {
+    margin: 0;
+    color: #555;
+    font-size: 0.95em;
+  }
+
+  /* Responsive for mobile */
+  @media (max-width: 768px) {
+    .horizontal-timeline {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .timeline-line {
+      top: 0;
+      left: 10px;
+      width: 4px;
+      height: 100%;
+    }
+
+    .timeline-dot {
+      top: 0;
+    }
+
+    .timeline-point {
+      margin: 30px 0;
+    }
+
+    .timeline-info {
+      margin-left: 40px;
+    }
+  }
+  </style>
 }
 /* ICON HOVER */
 .progress_bar_title i {
