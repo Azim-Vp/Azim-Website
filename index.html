@@ -110,7 +110,7 @@
                 </li>  
                 <li class="nav-item">  
                   <a class="nav-link text-white" href="#learning-section"  
-                    >Learnings</a  
+                    >Education</a  
                   >  
                 </li>  
                  <li class="nav-item">  
@@ -180,38 +180,43 @@
     </section>  
         <section class="bg-light" id="learning-section" style="padding: 20px;">
   <div class="container">
-    <h1 class="text-center"><strong>Learnings</strong></h1>
+    <h1 class="text-center"><strong>Education</strong></h1>
+<!-- TIMELINE - HORIZONTAL -->
+<div class="horizontal-timeline mt-5">
+  <div class="timeline-line"></div>
 
-    <!-- EDUCATION -->
-    <h2 class="text-center mt-4"><strong><em>Education</em></strong></h2>
-
-    <div class="timeline mt-4">
-
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <h5><strong>2023 - Present</strong></h5>
-          <p>Bachelor's Degree (Your College Name)</p>
-        </div>
-      </div>
-
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <h5><strong>2021 - 2023</strong></h5>
-          <p>Higher Secondary School (Your School Name)</p>
-        </div>
-      </div>
-
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <h5><strong>2019 - 2021</strong></h5>
-          <p>High School (Your School Name)</p>
-        </div>
-      </div>
-
+  <div class="timeline-point">
+    <span class="timeline-dot"></span>
+    <div class="timeline-info">
+      <strong>2024 - Present</strong>
+      <p>Higher Secondary Education (AL Farook Residential)</p>
     </div>
+  </div>
+
+  <div class="timeline-point">
+    <span class="timeline-dot"></span>
+    <div class="timeline-info">
+      <strong>2017 - 2024</strong>
+      <p>Secondary Education (AL Farook Residential)</p>
+    </div>
+  </div>
+
+  <div class="timeline-point">
+    <span class="timeline-dot"></span>
+    <div class="timeline-info">
+      <strong>2015 - 2017</strong>
+      <p>Primary Education (Gulf Asian English School)</p>
+      </div>
+  </div>
+  
+      <div class="timeline-point">
+    <span class="timeline-dot"></span>
+    <div class="timeline-info">
+      <strong>2012 - 2015</strong>
+      <p>Pre-Primary & Primary Education (AL Farook Residential)</p>
+    </div>
+  </div>
+</div>
 
     <!-- LANGUAGES -->
     <h2 style="margin-top:40px;"><strong><em>Languages</em></strong></h2>
@@ -325,48 +330,73 @@
               background-color: white;  
             }  
             /* TIMELINE */
-.timeline {
+.horizontal-timeline {
   position: relative;
-  margin-left: 20px;
-  padding-left: 20px;
-  border-left: 2px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 0;
+  flex-wrap: wrap; /* responsive */
 }
 
-.timeline-item {
+.timeline-line {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #ccc;
+  z-index: 1;
+}
+
+.timeline-point {
   position: relative;
-  margin-bottom: 30px;
-  padding-left: 20px;
+  text-align: center;
+  z-index: 2;
+  flex: 1;
 }
 
 .timeline-dot {
-  position: absolute;
-  left: -11px;
-  top: 5px;
-  height: 14px;
-  width: 14px;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
   background-color: #E1306C;
   border-radius: 50%;
+  position: relative;
+  z-index: 2;
   transition: 0.3s;
 }
 
-.timeline-content h5 {
-  margin: 0;
-  color: #000;
+.timeline-point:hover .timeline-dot {
+  transform: scale(1.5);
+  background-color: #000;
 }
 
-.timeline-content p {
+.timeline-info {
+  margin-top: 10px;
+  color: #333;
+}
+
+.timeline-info p {
   margin: 5px 0 0;
   color: #555;
 }
 
-/* HOVER EFFECT */
-.timeline-item:hover .timeline-dot {
-  transform: scale(1.4);
-  background-color: #000;
-}
+@media (max-width: 768px) {
+  .horizontal-timeline {
+    flex-direction: column;
+  }
 
-.timeline-item:hover .timeline-content p {
-  color: #E1306C;
+  .timeline-line {
+    top: 0;
+    left: 50%;
+    width: 4px;
+    height: 100%;
+  }
+
+  .timeline-point {
+    margin: 30px 0;
+  }
 }
 
 /* ICON HOVER */
